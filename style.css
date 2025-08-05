@@ -10,6 +10,13 @@
 
 body {
     background-color: #f1d9cc;
+}
+
+header {
+    padding-top: 40px;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +28,7 @@ h1 {
     font-weight: 400;
     font-size: var(--h1-size);
     text-align: center;
-    margin: 0;
+    margin: 20px;
     color: #501080;
 }
 

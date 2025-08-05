@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interaction Design Analysis</title>
 
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,45 +13,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Interaction Design Analysis</h1>
-    <h3 class="name">Jacob van der Eynden</h3>
-    <div class="infocontainer">
-        <div class="uisection">
-            <h2>7 Poems</h2>
-            <p class="name">by Justine Nguyễn-Nguyễn</p>
-            <img src="./img/7Poems.png">
-            <p class="link">
-                <a href="https://tdingsun.github.io/justine/">https://tdingsun.github.io/justine/</a>
-            </p>
+    <header>
+        <h1>Interaction Design Analysis</h1>
+        <h3 class="name">Jacob van der Eynden</h3>
+    </header>
+    <main>
+        <div class="infocontainer">
+            <div class="uisection">
+                <h2>7 Poems</h2>
+                <p class="name">by Justine Nguyễn-Nguyễn</p>
+                <img src="./img/7Poems.png">
+                <p class="link">
+                    <a href="https://tdingsun.github.io/justine/">https://tdingsun.github.io/justine/</a>
+                </p>
+            </div>
+            <div class="uisection">
+                <h2>Holdspace</h2>
+                <p class="name">by Carlos Yusim</p>
+                <img src="./img/Holdspace.png">
+                <p class="link">
+                    <a href="https://holdspace.surge.sh/">https://holdspace.surge.sh/</a>
+                </p>
+            </div>
         </div>
-        <div class="uisection">
-            <h2>Holdspace</h2>
-            <p class="name">by Carlos Yusim</p>
-            <img src="./img/Holdspace.png">
-            <p class="link">
-                <a href="https://holdspace.surge.sh/">https://holdspace.surge.sh/</a>
-            </p>
+        <div class="writtencontainer">
+            <div class="uisection">
+                <h3>Information Design</h3>
+                    <p>Each of the poems in 7 Poems is represented as a vertical bar, which expands out into a rectangle after the poem is opened. While the visual is abstract, it could be read as representing bound scrolls unfurling before they are read. Interestingly, the titles of the poems are the smallest text element on the page. This emphasises the contents of the poems, giving the titles less significance.</p>
+                    <p>In Holdspace, the most important visual element in the piece, the animated 3D shape, is positioned in the direct centre of the page. The vast whitespace surrounding the shape further contributes to drawing the user's eye towards it. Instructional text appears over the central visual, so that the user does not need to move their eyes away to read it.</p>
+                    <p>Both works take the approach of centering the main content in the page. Both works also feature a high contrast palette, using only two colours each. In each case, these decisions work together to direct the user's focus to the intended point, avoiding the creation of potential distractions.</p>
+                <h3>Mapping</h3>
+                    <p>7 Poems has a straight-forward but novel approach to mapping. Each "scroll" on the page represents one of the featured poems. Each poem is mapped to its own unique audio tone, which plays on repeat; once for each word as it is displayed.</p>
+                    <p>The progress of Holdspace's audiovisual sequence is mapped to progress bar shown at the top of the UI. The user's singular input is the space bar, which continuously increments the sequence's progress as it is held down. The action of not holding the space bar is, in a sense, mapped to the opposite, causing the progress of the sequence to reverse.</p>
+                    <p>In Holdspace, the user's sole action (or inaction) is mapped to every aspect of the experience. In 7 Poems, the user interacts with a selection of elements, experencing and learning the distinct mappings of each poem to its corresponding sound.</p>
+                <h3>Characterisation</h3>
+                    <p>Each poem in 7 Poems has its own corresponding tone, adding a dimension of character to the poems through their unique sound. The work allows for any number of the poems to be opened at once. Even though the user can't read all the poems at once, through their associated sounds, they can be experienced simultanously. The poems also cannot be closed again after being opened. In this way, the work's design purposely puts the user on a path to having all the poems open at once, leading to the intended final experience.</p>
+                    <p>Holdspace makes the user (in a small way) an active participant in a work that might normally be observed passively. The rationale of using the space bar in particular can be seen in the name of the work. The phrase "holding space" refers to making space in your consciousness for something or someone. The work's design asks the user to "hold space" for the work by giving it their full attention. It achieves this by effectively removing the user's option of switching to another browser tab to experience it in a more passive way.</p>
+                    <p>...</p>
+                <h3>Feedback</h3>
+                    <p>7 Poems uses feedback minimally but effectively. Mousing over a poem triggers a shadow to highlight it. The feedback given when pausing is somewhat ambiguous, changing the background colour of the poem rather than using a recognisable design pattern. The auditory feedback for pausing is more pronounced, as the paused poem's unique tone stops playing.</p>
+                    <p>In Holdspace, the user's input only input is holding down the space bar (or not holding it). The feedback for this one action is dramatic and all-encompassing, completely altering the page's visual appearance, sound, and behaviour. Black and white are inverted, the central shape changes to a different one, and the growing, dynamic music is replaced with quiet droning.</p>
+                    <p>The two works have drastically different approaches to feedback. 7 Poems uses feedback as a practical accent to add dimension and usability, while Holdspace's central experience is based on the feedback given for the user's action of holding (or not holding) the space bar.</p>
+            </div>
         </div>
-    </div>
-    <div class="writtencontainer">
-        <div class="uisection">
-            <h3>Information Design</h3>
-                <p>Each of the poems in 7 Poems is represented as a vertical bar, which expands out into a rectangle after the poem is opened. While the visual is abstract, it could be read as representing bound scrolls unfurling before they are read. Interestingly, the titles of the poems are the smallest text element on the page. This emphasises the contents of the poems, giving the titles less significance.</p>
-                <p>In Holdspace, the most important visual element in the piece, the animated 3D shape, is positioned in the direct centre of the page. The vast whitespace surrounding the shape further contributes to drawing the user's eye towards it. Instructional text appears over the central visual, so that the user does not need to move their eyes away to read it.</p>
-                <p>Both works take the approach of centering the main content in the page. Both works also feature a high contrast palette, using only two colours each. In each case, these decisions work together to direct the user's focus to the intended point, avoiding the creation of potential distractions.</p>
-            <h3>Mapping</h3>
-                <p>7 Poems has a straight-forward but novel approach to mapping. Each "scroll" on the page represents one of the featured poems. Each poem is mapped to its own unique audio tone, which plays on repeat; once for each word as it is displayed.</p>
-                <p>The progress of Holdspace's audiovisual sequence is mapped to progress bar shown at the top of the UI. The user's singular input is the space bar, which continuously increments the sequence's progress as it is held down. The action of not holding the space bar is, in a sense, mapped to the opposite, causing the progress of the sequence to reverse.</p>
-                <p>In Holdspace, the user's sole action (or inaction) is mapped to every aspect of the experience. In 7 Poems, the user interacts with a selection of elements, experencing and learning the distinct mappings of each poem to its corresponding sound.</p>
-            <h3>Characterisation</h3>
-                <p>Each poem in 7 Poems has its own corresponding tone, adding a dimension of character to the poems through their unique sound. The work allows for any number of the poems to be opened at once. Even though the user can't read all the poems at once, through their associated sounds, they can be experienced simultanously. The poems also cannot be closed again after being opened. In this way, the work's design purposely puts the user on a path to having all the poems open at once, leading to the intended final experience.</p>
-                <p>Holdspace makes the user (in a small way) an active participant in a work that might normally be observed passively. The rationale of using the space bar in particular can be seen in the name of the work. The phrase "holding space" refers to making space in your consciousness for something or someone. The work's design asks the user to "hold space" for the work by giving it their full attention. It achieves this by effectively removing the user's option of switching to another browser tab to experience it in a more passive way.</p>
-                <p>...</p>
-            <h3>Feedback</h3>
-                <p>7 Poems uses feedback minimally but effectively. Mousing over a poem triggers a shadow to highlight it. The feedback given when pausing is somewhat ambiguous, changing the background colour of the poem rather than using a recognisable design pattern. The auditory feedback for pausing is more pronounced, as the paused poem's unique tone stops playing.</p>
-                <p>In Holdspace, the user's input only input is holding down the space bar (or not holding it). The feedback for this one action is dramatic and all-encompassing, completely altering the page's visual appearance, sound, and behaviour. Black and white are inverted, the central shape changes to a different one, and the growing, dynamic music is replaced with quiet droning.</p>
-                <p>The two works have drastically different approaches to feedback. 7 Poems uses feedback as a practical accent to add dimension and usability, while Holdspace's central experience is based on the feedback given for the user's action of holding (or not holding) the space bar.</p>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
